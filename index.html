@@ -44,49 +44,7 @@
 
 <img src="https://www.format.com/wp-content/uploads/william-hundley-9.jpg">
 
-function setup() {
-  createCanvas(500, 500);
-  noLoop();
-}
-
-function draw() {
-  background(245);
-
-  // Sage rectangle
-  const sage = color(168, 183, 157);
-  rectMode(CENTER);
-  noStroke();
-  fill(sage);
-  rect(width / 2, height / 2, 260, 260, 40);
-
-  // Face styling
-  stroke(90);
-  strokeWeight(4);
-  noFill();
-
-  // Closed sleepy eyes (soft curves)
-  let eyeY = height / 2 - 25;
-  let eyeOffset = 45;
-
-  arc(width / 2 - eyeOffset, eyeY, 38, 18, PI, TWO_PI);
-  arc(width / 2 + eyeOffset, eyeY, 38, 18, PI, TWO_PI);
-
-  // Relaxed tiny mouth (😴-style)
-  let mouthY = height / 2 + 35;
-  arc(width / 2, mouthY, 30, 20, 0, PI);
-
-  // Optional: tiny nose dot (very subtle)
-  strokeWeight(3);
-  point(width / 2, height / 2 + 5);
-
-  // Optional: Zzz (comment out if you want it cleaner)
-  noStroke();
-  fill(90, 120);
-  textSize(24);
-  text("z", width / 2 + 70, height / 2 - 70);
-  textSize(18);
-  text("z", width / 2 + 90, height / 2 - 90);
-}
+<iframe src="https://editor.p5js.org/sleepycheeyeon/full/bJpjvWZp_"></iframe>
 
 
 </body>
